@@ -21,7 +21,7 @@ public class DnaService {   //MUTANT SERVICE
     }
 
     //METODO PRINCIPAL BOOLEAN
-    public boolean isMutant(String[] dna) {
+    public static boolean isMutant(String[] dna) {
 
         SequenceCheck(dna);                             //Verifico si la secuencia es válida
 
@@ -50,7 +50,7 @@ public class DnaService {   //MUTANT SERVICE
 
 
     //Metodo para validar las secuencias de ADN
-    private void SequenceCheck(String[] dna) {
+    private static void SequenceCheck(String[] dna) {
         int n = dna.length;
 
         //Verifico que cada fila que envíe tenga la cantidad correcta de caracteres
